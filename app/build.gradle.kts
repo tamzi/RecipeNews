@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.recipenews.android.application.compose)
     alias(libs.plugins.recipenews.hilt)
     alias(libs.plugins.roborazzi)
-    alias(libs.plugins.dependencyGuard)
 }
 
 android {
@@ -71,4 +70,8 @@ dependencies {
 
     testImplementation(libs.junit)
     testImplementation(libs.hilt.android.testing)
+}
+
+dependencyGuard {
+    configuration("releaseRuntimeClasspath")
 }
