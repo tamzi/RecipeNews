@@ -207,3 +207,20 @@ protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 roborazzi = { id = "io.github.takahirom.roborazzi", version.ref = "roborazzi" }
 room = { id = "androidx.room", version.ref = "room" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
+
+
+
+# Plugins defined by this project
+recipenews-android-application = { id = "recipenews.android.application", version = "unspecified" }
+recipenews-android-application-compose = { id = "recipenews.android.application.compose", version = "unspecified" }
+recipenews-android-application-firebase = { id = "recipenews.android.application.firebase", version = "unspecified" }
+recipenews-android-feature = { id = "recipenews.android.feature", version = "unspecified" }
+recipenews-android-library = { id = "recipenews.android.library", version = "unspecified" }
+recipenews-android-library-compose = { id = "recipenews.android.library.compose", version = "unspecified" }
+recipenews-android-lint = { id = "recipenews.android.lint", version = "unspecified" }
+recipenews-android-room = { id = "recipenews.android.room", version = "unspecified" }
+recipenews-android-test = { id = "recipenews.android.test", version = "unspecified" }
+recipenews-hilt = { id = "recipenews.hilt", version = "unspecified" }
+recipenews-jvm-library = { id = "recipenews.jvm.library", version = "unspecified" }
+
+

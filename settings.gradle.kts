@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("buildLogic")
     repositories {
         google {
             content {
@@ -23,4 +24,4 @@ rootProject.name = "RecipeNews"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(":app")
- 
+include(":rnds")
