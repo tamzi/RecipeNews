@@ -33,6 +33,8 @@ android {
 dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(project(":rnds"))
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.junit)
 }
 
 dependencyGuard {

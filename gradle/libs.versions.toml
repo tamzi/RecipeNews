@@ -67,8 +67,8 @@ turbine = "1.1.0"
 material = "1.12.0"
 junitJunit = "4.13.2"
 core = "1.13.1"
-junitJunitVersion = "4.13.2"
 monitor = "1.7.2"
+junitJunit2 = "4.12"
 
 [bundles]
 androidx-compose-ui-test = ["androidx-compose-ui-test", "androidx-compose-ui-testManifest"]
@@ -183,7 +183,6 @@ ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devto
 room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
-junit-junit2 = { group = "junit", name = "junit", version.ref = "junitJunitVersion" }
 androidx-monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
 
 [plugins]
