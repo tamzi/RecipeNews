@@ -27,4 +27,7 @@ include(":app")
 include(":rnds")
 include(":rndsdemo")
 include(":lint")
+
+include(":core:common")
 include(":core:model")
+
