@@ -13,13 +13,13 @@ import androidx.compose.ui.graphics.Color
  * @param container The container gradient color over which the gradient will be rendered.
  */
 @Immutable
-data class GradientColors(
+data class RNGradientColors(
     val top: Color = Color.Unspecified,
     val bottom: Color = Color.Unspecified,
     val container: Color = Color.Unspecified,
 )
 
 /**
- * A composition local for [GradientColors].
+ * A composition local for [RNGradientColors].
  */
-val LocalGradientColors = staticCompositionLocalOf { GradientColors() }
+val LocalRNGradientColors = staticCompositionLocalOf { RNGradientColors() }

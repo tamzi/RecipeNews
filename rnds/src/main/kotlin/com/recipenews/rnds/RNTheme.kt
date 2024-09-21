@@ -16,11 +16,11 @@ import com.recipenews.rnds.atoms.color.BackgroundTheme
 import com.recipenews.rnds.atoms.color.DarkAndroidColorScheme
 import com.recipenews.rnds.atoms.color.DarkDefaultColorScheme
 import com.recipenews.rnds.atoms.color.DarkGreenGray95
-import com.recipenews.rnds.atoms.color.GradientColors
+import com.recipenews.rnds.atoms.color.RNGradientColors
 import com.recipenews.rnds.atoms.color.LightAndroidColorScheme
 import com.recipenews.rnds.atoms.color.LightDefaultColorScheme
-import com.recipenews.rnds.atoms.color.LocalBackgroundTheme
-import com.recipenews.rnds.atoms.color.LocalGradientColors
+import com.recipenews.rnds.atoms.color.LocalRNBackgroundTheme
+import com.recipenews.rnds.atoms.color.LocalRNGradientColors
 import com.recipenews.rnds.atoms.color.LocalTintTheme
 import com.recipenews.rnds.atoms.color.TintTheme
 import com.recipenews.rnds.atoms.type.RNTypography
@@ -29,12 +29,12 @@ import com.recipenews.rnds.atoms.type.RNTypography
 /**
  * Light Android gradient colors
  */
-val LightAndroidGradientColors = GradientColors(container = DarkGreenGray95)
+val LightAndroidRNGradientColors = RNGradientColors(container = DarkGreenGray95)
 
 /**
  * Dark Android gradient colors
  */
-val DarkAndroidGradientColors = GradientColors(container = Color.Black)
+val DarkAndroidRNGradientColors = RNGradientColors(container = Color.Black)
 
 /**
  * Light Android background theme
@@ -73,16 +73,16 @@ fun RNTheme(
         else -> if (darkTheme) DarkDefaultColorScheme else LightDefaultColorScheme
     }
     // Gradient colors
-    val emptyGradientColors = GradientColors(container = colorScheme.surfaceColorAtElevation(2.dp))
-    val defaultGradientColors = GradientColors(
+    val emptyRNGradientColors = RNGradientColors(container = colorScheme.surfaceColorAtElevation(2.dp))
+    val defaultRNGradientColors = RNGradientColors(
         top = colorScheme.inverseOnSurface,
         bottom = colorScheme.primaryContainer,
         container = colorScheme.surface,
     )
     val gradientColors = when {
-        androidTheme -> if (darkTheme) DarkAndroidGradientColors else LightAndroidGradientColors
-        !disableDynamicTheming && supportsDynamicTheming() -> emptyGradientColors
-        else -> defaultGradientColors
+        androidTheme -> if (darkTheme) DarkAndroidRNGradientColors else LightAndroidRNGradientColors
+        !disableDynamicTheming && supportsDynamicTheming() -> emptyRNGradientColors
+        else -> defaultRNGradientColors
     }
     // Background theme
     val defaultBackgroundTheme = BackgroundTheme(
@@ -100,8 +100,8 @@ fun RNTheme(
     }
     // Composition locals
     CompositionLocalProvider(
-        LocalGradientColors provides gradientColors,
-        LocalBackgroundTheme provides backgroundTheme,
+        LocalRNGradientColors provides gradientColors,
+        LocalRNBackgroundTheme provides backgroundTheme,
         LocalTintTheme provides tintTheme,
     ) {
         MaterialTheme(
