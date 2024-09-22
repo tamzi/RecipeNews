@@ -11,10 +11,15 @@ import androidx.compose.ui.unit.sp
 /**
  * RecipeNews typography.
  */
-internal val RNTypography = Typography(
+
+// to make this private: will change the name to _RNTypography
+
+//TO rework this by
+val RNTypography = Typography(
     displayLarge = TextStyle(
+        fontFamily = DTPhuduMedium,
         fontWeight = FontWeight.Normal,
-        fontSize = 57.sp,
+        fontSize = 47.sp,
         lineHeight = 64.sp,
         letterSpacing = (-0.25).sp,
     ),

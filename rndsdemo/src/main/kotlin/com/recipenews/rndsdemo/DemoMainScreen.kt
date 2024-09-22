@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.recipenews.rnds.RNTheme
+import com.recipenews.rnds.atoms.type.RNTypography
 
 /**
  * RecipeNews Design System components Demo.
@@ -34,9 +35,10 @@ fun RNDSDemo() {
                 verticalArrangement = Arrangement.spacedBy(16.dp),
             ){
                 item {
+
                     Text(
                         text = "Recipe News Design System Catalog",
-                        style = MaterialTheme.typography.headlineSmall,
+                        style = RNTypography.displayLarge,
                     )
                 }
             }
