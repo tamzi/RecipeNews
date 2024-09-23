@@ -21,8 +21,8 @@ import com.recipenews.rnds.atoms.color.LightAndroidColorScheme
 import com.recipenews.rnds.atoms.color.LightDefaultColorScheme
 import com.recipenews.rnds.atoms.color.LocalRNBackgroundTheme
 import com.recipenews.rnds.atoms.color.LocalRNGradientColors
-import com.recipenews.rnds.atoms.color.LocalTintTheme
-import com.recipenews.rnds.atoms.color.TintTheme
+import com.recipenews.rnds.atoms.color.LocalRNTintTheme
+import com.recipenews.rnds.atoms.color.RNTintTheme
 import com.recipenews.rnds.atoms.type.RNTypography
 
 
@@ -93,16 +93,16 @@ fun RNTheme(
         androidTheme -> if (darkTheme) DarkAndroidBackgroundTheme else LightAndroidBackgroundTheme
         else -> defaultBackgroundTheme
     }
-    val tintTheme = when {
-        androidTheme -> TintTheme()
-        !disableDynamicTheming && supportsDynamicTheming() -> TintTheme(colorScheme.primary)
-        else -> TintTheme()
+    val RNTintTheme = when {
+        androidTheme -> RNTintTheme()
+        !disableDynamicTheming && supportsDynamicTheming() -> RNTintTheme(colorScheme.primary)
+        else -> RNTintTheme()
     }
     // Composition locals
     CompositionLocalProvider(
         LocalRNGradientColors provides gradientColors,
         LocalRNBackgroundTheme provides backgroundTheme,
-        LocalTintTheme provides tintTheme,
+        LocalRNTintTheme provides RNTintTheme,
     ) {
         MaterialTheme(
             colorScheme = colorScheme,

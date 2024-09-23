@@ -9,11 +9,11 @@ import androidx.compose.ui.graphics.Color
  * A class to model background color and tonal elevation values for Now in Android.
  */
 @Immutable
-data class TintTheme(
+data class RNTintTheme(
     val iconTint: Color = Color.Unspecified,
 )
 
 /**
- * A composition local for [TintTheme].
+ * A composition local for [RNTintTheme].
  */
-val LocalTintTheme = staticCompositionLocalOf { TintTheme() }
+val LocalRNTintTheme = staticCompositionLocalOf { RNTintTheme() }
