@@ -36,6 +36,33 @@ import com.recipenews.rnds.atoms.color.ThemePreviews
 import kotlinx.coroutines.launch
 
 
+/**
+ * A RNLoadingWheel is a loading wheel that animates infinitely.
+ *
+ * To use this component:
+ *
+ * 1. Import the RNOverlayLoadingWheel Component.
+ * 2. Use the RNLoadingWheel composable function to add a loading wheel to your UI. This function takes a contentDesc parameter for accessibility and an optional modifier parameter for styling.
+ *
+ * ```@Composable
+ * fun MyScreen() {
+ *      RNLoadingWheel(contentDesc = "Loading")
+ *  }
+ *  ```
+ *
+ *
+ * @param contentDesc The content description for the loading wheel.
+ * @param modifier The modifier to be applied to the loading wheel.
+ *
+ * @sample RNLoadingWheelPreview
+ * @see RNOverlayLoadingWheel
+ * @see RNOverlayLoadingWheelPreview
+ *
+ *
+ */
+
+
+
 @Composable
 fun RNLoadingWheel(
     contentDesc: String,
