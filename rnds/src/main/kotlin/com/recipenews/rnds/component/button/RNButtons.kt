@@ -1,4 +1,4 @@
-package com.recipenews.rnds.component
+package com.recipenews.rnds.component.button
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Box

@@ -1,4 +1,4 @@
-package com.recipenews.rnds.component
+package com.recipenews.rnds.component.button
 
 import androidx.compose.material3.FilledIconToggleButton
 import androidx.compose.material3.Icon
