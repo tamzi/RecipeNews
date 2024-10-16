@@ -7,11 +7,9 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.add
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -39,7 +37,7 @@ fun RNDSDemo() {
             LazyColumn(
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = contentPadding,
-                verticalArrangement = Arrangement.spacedBy(16.dp),
+                verticalArrangement = Arrangement.spacedBy(14.dp),
             ){
                 item {
 
@@ -48,85 +46,19 @@ fun RNDSDemo() {
                         style = RNTypography.displayLarge,
                     )
                 }
-                /** Buttons start here*/
                 item {
-                    Text(
-                        text = "Buttons",
-                        style = RNTypography.headlineMedium,
-                    )
-                }
-                item {
-                    FlowRow(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                        RNButton(onClick = {}) {
-                            Text(text = "Enabled")
-                        }
-                        RNOutlinedButton(onClick = {}) {
-                            Text(text = "Enabled")
-                        }
-                        RNTextButton(onClick = {}) {
-                            Text(text = "Enabled")
-                        }
+
+                    RNButton(onClick = {}) {
+                        Text(text = "Buttons")
                     }
                 }
                 item {
-                    Text(
-                        text = "Disabled Buttons",
-                        style = RNTypography.headlineMedium,
-                    )
-                }
-                item {
-                    FlowRow(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                        RNButton(
-                            onClick = {},
-                            enabled = false,
-                        ) {
-                            Text(text = "Disabled")
-                        }
-                        RNOutlinedButton(
-                            onClick = {},
-                            enabled = false,
-                        ) {
-                            Text(text = "Disabled")
-                        }
-                        RNTextButton(
-                            onClick = {},
-                            enabled = false,
-                        ) {
-                            Text(text = "Disabled")
-                        }
+
+                    RNButton(onClick = {}) {
+                        Text(text = "Menus")
                     }
                 }
-                item {
-                    Text(
-                        text = "Buttons with Leading Icons",
-                        style = RNTypography.headlineMedium,
-                    )
-                }
-                item {
-                    FlowRow(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                        RNButton(
-                            onClick = {},
-                            text = { Text(text = "Enabled") },
-                            leadingIcon = {
-                                Icon(imageVector = RNIcons.Add, contentDescription = null)
-                            },
-                        )
-                        RNOutlinedButton(
-                            onClick = {},
-                            text = { Text(text = "Enabled") },
-                            leadingIcon = {
-                                Icon(imageVector = RNIcons.Add, contentDescription = null)
-                            },
-                        )
-                        RNTextButton(
-                            onClick = {},
-                            text = { Text(text = "Enabled") },
-                            leadingIcon = {
-                                Icon(imageVector = RNIcons.Add, contentDescription = null)
-                            },
-                        )
-                    }
-                }
+
 
 
             }
