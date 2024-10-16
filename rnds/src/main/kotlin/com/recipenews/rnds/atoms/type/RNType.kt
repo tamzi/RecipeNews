@@ -24,12 +24,14 @@ val RNTypography = Typography(
         letterSpacing = (-0.25).sp,
     ),
     displayMedium = TextStyle(
+        fontFamily = DTPhuduMedium,
         fontWeight = FontWeight.Normal,
         fontSize = 45.sp,
         lineHeight = 52.sp,
         letterSpacing = 0.sp,
     ),
     displaySmall = TextStyle(
+        fontFamily = DTPhuduMedium,
         fontWeight = FontWeight.Normal,
         fontSize = 36.sp,
         lineHeight = 44.sp,
