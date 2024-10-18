@@ -15,12 +15,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.recipenews.rnds.RNIcons
 import com.recipenews.rnds.RNTheme
 import com.recipenews.rnds.atoms.type.RNTypography
 import com.recipenews.rnds.component.button.RNButton
-import com.recipenews.rnds.component.button.RNOutlinedButton
-import com.recipenews.rnds.component.button.RNTextButton
 
 /**
  * RecipeNews Design System components Demo.
