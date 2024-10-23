@@ -4,7 +4,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.core.view.WindowCompat
-import com.recipenews.rndsdemo.screens.RNDSButtonsDemoScreen
+import com.recipenews.rndsdemo.screens.RNDSDemoEmptyScreen
+import com.recipenews.rndsdemo.screens.RNDSNavigationDemoScreen
+import com.recipenews.rndsdemo.screens.RNDSTabsScreen
+import com.recipenews.rndsdemo.screens.RNDSTagsScreen
+import com.recipenews.rndsdemo.screens.RNDSToggleButtonsDemoScreen
 
 
 class RNDSDemoMainActivity : ComponentActivity() {
@@ -13,6 +17,6 @@ class RNDSDemoMainActivity : ComponentActivity() {
 
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
-        setContent { RNDSDemo() }
+        setContent { RNDSNavigationDemoScreen() }
     }
 }
