@@ -52,7 +52,7 @@ fun RNDSButtonsDemoScreen() {
                         style = RNTypography.bodyMedium,
                     )
                 }
-                /** Buttons start here*/
+                /** Normal Buttons*/
                 item {
                     Text(
                         text = "Normal Buttons",
@@ -72,6 +72,7 @@ fun RNDSButtonsDemoScreen() {
                         }
                     }
                 }
+                /*Disabled Buttons*/
                 item {
                     Text(
                         text = "Disabled Buttons",
@@ -100,6 +101,7 @@ fun RNDSButtonsDemoScreen() {
                         }
                     }
                 }
+                /*Buttons with Leading Icons*/
                 item {
                     Text(
                         text = "Buttons with Leading Icons",
@@ -131,7 +133,6 @@ fun RNDSButtonsDemoScreen() {
                         )
                     }
                 }
-
 
             }
         }
