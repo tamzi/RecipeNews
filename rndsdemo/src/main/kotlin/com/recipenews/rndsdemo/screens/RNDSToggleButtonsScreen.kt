@@ -24,7 +24,7 @@ import com.recipenews.rnds.component.button.RNToggleViewButton
 
 
 /**
-* RecipeNews Design System components Demo.
+* RecipeNews Design System Toggle buttons components Demo.
 */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable

@@ -28,7 +28,7 @@ import com.recipenews.rnds.component.button.RNOutlinedButton
 import com.recipenews.rnds.component.button.RNTextButton
 
 /**
- * RecipeNews Design System components Demo.
+ * RecipeNews Design System Buttons Demo.
  */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
