@@ -2,7 +2,6 @@ package com.recipenews.rndsdemo.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.add
 import androidx.compose.foundation.layout.asPaddingValues
@@ -16,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.recipenews.rnds.RNTheme
 import com.recipenews.rnds.atoms.type.RNTypography
-import com.recipenews.rnds.component.RNTopicTag
 
 /*
 This is a demo empty screen you can use when adding new demo screens to the demo app
