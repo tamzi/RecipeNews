@@ -42,7 +42,7 @@ fun RNDSTabsScreen() {
                 item {
 
                     Text(
-                        text = "RNDS Tabs Page title",
+                        text = "RNDS Tabs",
                         style = RNTypography.displaySmall,
                     )
                 }
