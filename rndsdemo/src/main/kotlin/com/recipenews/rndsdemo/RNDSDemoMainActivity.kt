@@ -9,6 +9,7 @@ import com.recipenews.rndsdemo.screens.RNDSNavigationDemoScreen
 import com.recipenews.rndsdemo.screens.RNDSTabsScreen
 import com.recipenews.rndsdemo.screens.RNDSTagsScreen
 import com.recipenews.rndsdemo.screens.RNDSToggleButtonsDemoScreen
+import com.recipenews.rndsdemo.screens.RNDSButtonsDemoScreen
 
 
 class RNDSDemoMainActivity : ComponentActivity() {
