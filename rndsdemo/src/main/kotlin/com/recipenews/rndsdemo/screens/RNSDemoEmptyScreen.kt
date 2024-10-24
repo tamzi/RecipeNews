@@ -1,4 +1,4 @@
-package com.recipenews.rndsdemo
+package com.recipenews.rndsdemo.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -15,14 +15,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.recipenews.rnds.RNTheme
 import com.recipenews.rnds.atoms.type.RNTypography
-import com.recipenews.rnds.component.button.RNButton
 
-/**
- * RecipeNews Design System components Demo.
- */
+/*
+This is a demo empty screen you can use when adding new demo screens to the demo app
+*/
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun RNDSDemoMainScreen() {
+fun RNDSDemoEmptyScreen() {
     RNTheme{
         Surface {
             val contentPadding = WindowInsets
@@ -32,28 +31,31 @@ fun RNDSDemoMainScreen() {
             LazyColumn(
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = contentPadding,
-                verticalArrangement = Arrangement.spacedBy(14.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp),
             ){
                 item {
 
                     Text(
-                        text = "Recipe News Design System Catalog",
-                        style = RNTypography.displayLarge,
+                        text = "RNDS Demo Page title",
+                        style = RNTypography.displaySmall,
                     )
                 }
                 item {
-
-                    RNButton(onClick = {}) {
-                        Text(text = "Buttons")
-                    }
+                    Text(
+                        text = "This is an empty demo page in the Recipe News Design System." +
+                                "Change this paragraph to explain what is being demo-d",
+                        style = RNTypography.bodyMedium,
+                    )
                 }
                 item {
-
-                    RNButton(onClick = {}) {
-                        Text(text = "Menus")
-                    }
+                    Text(
+                        text = "Title of item in rnds",
+                        style = RNTypography.headlineSmall,
+                    )
                 }
-
+                item {
+                    //add something here
+                }
 
 
             }

@@ -13,17 +13,22 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.recipenews.rnds.RNIcons
 import com.recipenews.rnds.RNTheme
 import com.recipenews.rnds.atoms.type.RNTypography
 import com.recipenews.rnds.component.button.RNButton
+import com.recipenews.rnds.component.button.RNIconToggleButton
 import com.recipenews.rnds.component.button.RNOutlinedButton
 import com.recipenews.rnds.component.button.RNTextButton
 
 /**
- * RecipeNews Design System components Demo.
+ * RecipeNews Design System Buttons Demo.
  */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -52,7 +57,7 @@ fun RNDSButtonsDemoScreen() {
                         style = RNTypography.bodyMedium,
                     )
                 }
-                /** Buttons start here*/
+                /** Normal Buttons*/
                 item {
                     Text(
                         text = "Normal Buttons",
@@ -72,6 +77,7 @@ fun RNDSButtonsDemoScreen() {
                         }
                     }
                 }
+                /*Disabled Buttons*/
                 item {
                     Text(
                         text = "Disabled Buttons",
@@ -100,6 +106,7 @@ fun RNDSButtonsDemoScreen() {
                         }
                     }
                 }
+                /*Buttons with Leading Icons*/
                 item {
                     Text(
                         text = "Buttons with Leading Icons",
@@ -128,6 +135,85 @@ fun RNDSButtonsDemoScreen() {
                             leadingIcon = {
                                 Icon(imageVector = RNIcons.Add, contentDescription = null)
                             },
+                        )
+                    }
+                }
+                /*Icon Buttons*/
+                item {
+                    Text(
+                        text = "Icon buttons",
+                        style = RNTypography.headlineSmall,
+                    )
+                }
+                item {
+                    FlowRow(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                        var firstChecked by rememberSaveable { mutableStateOf(false) }
+                        RNIconToggleButton(
+                            checked = firstChecked,
+                            onCheckedChange = { checked -> firstChecked = checked },
+                            icon = {
+                                Icon(
+                                    imageVector = RNIcons.BookmarkBorder,
+                                    contentDescription = null,
+                                )
+                            },
+                            checkedIcon = {
+                                Icon(
+                                    imageVector = RNIcons.Bookmark,
+                                    contentDescription = null,
+                                )
+                            },
+                        )
+                        var secondChecked by rememberSaveable { mutableStateOf(true) }
+                        RNIconToggleButton(
+                            checked = secondChecked,
+                            onCheckedChange = { checked -> secondChecked = checked },
+                            icon = {
+                                Icon(
+                                    imageVector = RNIcons.BookmarkBorder,
+                                    contentDescription = null,
+                                )
+                            },
+                            checkedIcon = {
+                                Icon(
+                                    imageVector = RNIcons.Bookmark,
+                                    contentDescription = null,
+                                )
+                            },
+                        )
+                        RNIconToggleButton(
+                            checked = false,
+                            onCheckedChange = {},
+                            icon = {
+                                Icon(
+                                    imageVector = RNIcons.BookmarkBorder,
+                                    contentDescription = null,
+                                )
+                            },
+                            checkedIcon = {
+                                Icon(
+                                    imageVector = RNIcons.Bookmark,
+                                    contentDescription = null,
+                                )
+                            },
+                            enabled = false,
+                        )
+                        RNIconToggleButton(
+                            checked = true,
+                            onCheckedChange = {},
+                            icon = {
+                                Icon(
+                                    imageVector = RNIcons.BookmarkBorder,
+                                    contentDescription = null,
+                                )
+                            },
+                            checkedIcon = {
+                                Icon(
+                                    imageVector = RNIcons.Bookmark,
+                                    contentDescription = null,
+                                )
+                            },
+                            enabled = false,
                         )
                     }
                 }
