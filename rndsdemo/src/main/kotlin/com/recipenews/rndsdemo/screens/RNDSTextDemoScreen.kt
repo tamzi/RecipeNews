@@ -71,7 +71,7 @@ fun RNDSTextDemoScreen() {
                         style = RNTypography.displaySmall,
                     )
                 }
-                // Start of Headline type
+                // Start of Body type
                 item {
                     Text(
                         text = "body type in rnds",
@@ -148,6 +148,33 @@ fun RNDSTextDemoScreen() {
                         style = RNTypography.titleSmall,
                     )
                 }
+                // Start of label type
+                item {
+
+                    Text(
+                        text = "Label type in rnds",
+                        style = RNTypography.headlineSmall,
+                    )
+                }
+                item {
+                    Text(
+                        text = "Label Large",
+                        style = RNTypography.labelLarge,
+                    )
+                }
+                item {
+                    Text(
+                        text = "Label Medium",
+                        style = RNTypography.labelMedium,
+                    )
+                }
+                item {
+                    Text(
+                        text = "Label Small",
+                        style = RNTypography.labelSmall,
+                    )
+                }
+
 
 
             }
