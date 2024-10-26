@@ -74,26 +74,26 @@ fun RNDSTextDemoScreen() {
                 // Start of Headline type
                 item {
                     Text(
-                        text = "headline type in rnds",
+                        text = "body type in rnds",
                         style = RNTypography.headlineSmall,
                     )
                 }
                 item {
                     Text(
-                        text = "Headline Large",
-                        style = RNTypography.headlineLarge,
+                        text = "Body Large",
+                        style = RNTypography.bodyLarge,
                     )
                 }
                 item {
                     Text(
-                        text = "Headline Medium",
-                        style = RNTypography.headlineMedium,
+                        text = "Body Medium",
+                        style = RNTypography.bodyMedium,
                     )
                 }
                 item {
                     Text(
-                        text = "Headline Small",
-                        style = RNTypography.headlineSmall,
+                        text = "Body Small",
+                        style = RNTypography.bodySmall,
                     )
                 }
                 // Start of Headline type
@@ -132,23 +132,22 @@ fun RNDSTextDemoScreen() {
                 }
                 item {
                     Text(
-                        text = "Headline Large",
+                        text = "Title Large",
                         style = RNTypography.titleLarge,
                     )
                 }
                 item {
                     Text(
-                        text = "Headline Medium",
+                        text = "Title Medium",
                         style = RNTypography.titleMedium,
                     )
                 }
                 item {
                     Text(
-                        text = "Headline Small",
+                        text = "Title Small",
                         style = RNTypography.titleSmall,
                     )
                 }
-
 
 
             }
