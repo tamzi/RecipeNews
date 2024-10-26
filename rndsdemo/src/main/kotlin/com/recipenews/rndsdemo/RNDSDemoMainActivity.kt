@@ -10,6 +10,7 @@ import com.recipenews.rndsdemo.screens.RNDSTabsScreen
 import com.recipenews.rndsdemo.screens.RNDSTagsScreen
 import com.recipenews.rndsdemo.screens.RNDSToggleButtonsDemoScreen
 import com.recipenews.rndsdemo.screens.RNDSButtonsDemoScreen
+import com.recipenews.rndsdemo.screens.RNDSTextDemoScreen
 
 
 class RNDSDemoMainActivity : ComponentActivity() {
@@ -18,6 +19,6 @@ class RNDSDemoMainActivity : ComponentActivity() {
 
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
-        setContent { RNDSNavigationDemoScreen() }
+        setContent { RNDSTextDemoScreen() }
     }
 }
