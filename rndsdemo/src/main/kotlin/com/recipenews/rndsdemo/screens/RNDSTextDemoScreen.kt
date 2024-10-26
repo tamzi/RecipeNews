@@ -73,6 +73,31 @@ fun RNDSTextDemoScreen() {
                 }
                 // Start of Headline type
                 item {
+                    Text(
+                        text = "headline type in rnds",
+                        style = RNTypography.headlineSmall,
+                    )
+                }
+                item {
+                    Text(
+                        text = "Headline Large",
+                        style = RNTypography.headlineLarge,
+                    )
+                }
+                item {
+                    Text(
+                        text = "Headline Medium",
+                        style = RNTypography.headlineMedium,
+                    )
+                }
+                item {
+                    Text(
+                        text = "Headline Small",
+                        style = RNTypography.headlineSmall,
+                    )
+                }
+                // Start of Headline type
+                item {
 
                     Text(
                         text = "headline type in rnds",
