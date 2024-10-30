@@ -12,9 +12,12 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.recipenews.rnds.RNTheme
 import com.recipenews.rnds.atoms.type.RNTypography
+import com.recipenews.rnds.utility.LineType
+import com.recipenews.rnds.utility.RNLine
 
 /*
 This is a demo empty screen you can use when adding new demo screens to the demo app
@@ -36,7 +39,7 @@ fun RNDSTextDemoScreen() {
                 item {
 
                     Text(
-                        text = "RNDS Text Demo Page title",
+                        text = "RNDS Text Demo",
                         style = RNTypography.displaySmall,
                     )
                 }
@@ -45,6 +48,9 @@ fun RNDSTextDemoScreen() {
                         text = "These are the texts that we have in the Recipe News Design System",
                         style = RNTypography.bodyMedium,
                     )
+                }
+                item{
+                    RNLine(color = Color.Red, lineType = LineType.DASHED)
                 }
                 // Start of display type
                 item {
@@ -71,6 +77,9 @@ fun RNDSTextDemoScreen() {
                         style = RNTypography.displaySmall,
                     )
                 }
+                item{
+                    RNLine(color = Color.Red, lineType = LineType.STRAIGHT)
+                }
                 // Start of Body type
                 item {
                     Text(
@@ -95,6 +104,9 @@ fun RNDSTextDemoScreen() {
                         text = "Body Small",
                         style = RNTypography.bodySmall,
                     )
+                }
+                item{
+                    RNLine(color = Color.Red, lineType = LineType.STRAIGHT)
                 }
                 // Start of Headline type
                 item {
@@ -122,6 +134,9 @@ fun RNDSTextDemoScreen() {
                         style = RNTypography.headlineSmall,
                     )
                 }
+                item{
+                    RNLine(color = Color.Red, lineType = LineType.STRAIGHT)
+                }
                 // Start of Headline type
                 item {
 
@@ -147,6 +162,9 @@ fun RNDSTextDemoScreen() {
                         text = "Title Small",
                         style = RNTypography.titleSmall,
                     )
+                }
+                item{
+                    RNLine(color = Color.Red, lineType = LineType.STRAIGHT)
                 }
                 // Start of label type
                 item {
